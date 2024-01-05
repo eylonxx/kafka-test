@@ -1,0 +1,23 @@
+{
+  "name": "kafka-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec ts-node --env-file=.env src/index.ts",
+    "create:topic": "node -r ts-node/register --env-file=.env ./src/createTopic.ts",
+    "produce": "node -r ts-node/register --env-file=.env ./src/producer.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
