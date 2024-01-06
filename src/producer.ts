@@ -16,7 +16,7 @@ const produceMessage = async () => {
 
   const producerRecord: ProducerRecord = {
     topic: topicName,
-    messages: [{ value: message }],
+    messages: [{ key: "key1", value: message }],
   };
 
   await producer.send(producerRecord);

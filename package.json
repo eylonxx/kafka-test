@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec ts-node --env-file=.env src/index.ts",
     "create:topic": "node -r ts-node/register --env-file=.env ./src/createTopic.ts",
-    "produce": "node -r ts-node/register --env-file=.env ./src/producer.ts"
+    "produce": "node -r ts-node/register --env-file=.env ./src/producer.ts",
+    "consume": "node -r ts-node/register --env-file=.env ./src/consumer.ts"
   },
   "keywords": [],
   "author": "",
