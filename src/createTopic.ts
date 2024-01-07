@@ -10,7 +10,7 @@ const admin = kafka.admin();
 const createTopic = async () => {
   await admin.connect();
 
-  const topicName = "test-2";
+  const topicName = "orders";
   const partitions = 1;
   const replicationFactor = 1;
 
